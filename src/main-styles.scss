@@ -13,6 +13,7 @@ $light-green: hsl(171, 100%, 68%);
 $red:  hsl(348, 100%, 61%);
 $light-red:  hsl(348, 100%, 71%);
 $beige-light: #EFF0EB;
+$beige-lighter: #D0D1CD;
 $dark: rgb(22,28,41);
 
 // Update Bulma's global variables
@@ -23,7 +24,8 @@ $link: $purple;
 // Update some of Bulma's component variables
 $body-background-color: $beige-light;
 $control-border-width: 2px;
-$input-border-color: $light-grey;
+$input-border-color: transparent;
+$input-background-color: $light-grey;
 $input-shadow: none;
 
 // Import only what you need from Bulma
