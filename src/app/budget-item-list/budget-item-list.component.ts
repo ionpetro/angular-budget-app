@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { BudgetItem } from '../shared/modules/budget-item.modules';
 
 @Component({
@@ -10,10 +10,15 @@ import { BudgetItem } from '../shared/modules/budget-item.modules';
 export class BudgetItemListComponent implements OnInit {
 
   @Input() budgetItems: BudgetItem[];
+  @Output() delete: EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onDelete(item: BudgetItem) {
+    this.delete.emit(item);
   }
 
 }
