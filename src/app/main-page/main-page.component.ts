@@ -19,7 +19,10 @@ export class MainPageComponent implements OnInit {
   }
 
   addItem(newItem: BudgetItem) {
-    this.budgetItems.push(newItem);
+    // items with 0 amount should not be inserted to any list
+    if (newItem.amount != 0) {
+      this.budgetItems.push(newItem);
+    }
     this.totalBudget+=newItem.amount;
   }
 

@@ -1,5 +1,17 @@
 # BudgetApp
 
+Find the live version [here](https://budget-app-12345.web.app/)
+
+This application was developed following [Devstackr's](https://github.com/Devstackr/budget-app-angular) tutorial in order to get myself familiar with:
+* Angular Forms
+* Displaying dialogs
+* component interaction
+* application deployment to firebase
+
+![Application Design](./src/assets/ss.png)
+
+## Angular
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
 ## Development server
