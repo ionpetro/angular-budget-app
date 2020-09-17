@@ -15,7 +15,12 @@
       </div>
 
       <div class="field is-narrow">
-        <button type="submit" class="button is-primary" [disabled]="!itemForm.valid">Add</button>
+        <button type="submit" class="button" [ngClass]="{'is-primary' : isNewItem, 'is-success' : !isNewItem}" [disabled]="!itemForm.valid">
+          <p *ngIf="isNewItem">Add</p>
+          <p *ngIf="!isNewItem">Save</p>
+
+        </button>
+        <button *ngIf="!isNewItem" style="margin-left: 10px;" class="button is-secondary" mat-button mat-dialog-close >Cancel</button>
       </div>
 
     </div>
